@@ -8,6 +8,7 @@ export default function Button(props) {
 
       <style jsx>{`
         button {
+          margin-top: 20px;
           background-color: white;
           color: black;
           padding: 10px;

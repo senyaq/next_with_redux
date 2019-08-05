@@ -11523,7 +11523,8 @@ __webpack_require__.r(__webpack_exports__);
 var reducer = function reducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
     foo: 'start',
-    count: 0
+    count: 0,
+    nameTheme: 'theme_red'
   };
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
@@ -11536,6 +11537,11 @@ var reducer = function reducer() {
     case 'PLUS':
       return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
         count: action.payload
+      });
+
+    case 'THEME':
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
+        nameTheme: action.payload
       });
 
     default:

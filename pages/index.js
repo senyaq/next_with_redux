@@ -57,13 +57,17 @@ function Blog(props) {
   console.log('component', props)
   return (
     <Layout>
-      <h1>My Blog2</h1>
+      <h1>My Blog</h1>
       <h3>My count: {count}</h3>
       <ul>
         {getPosts().map(post => (
           <PostLink key={post.id} post={post} />
         ))}
       </ul>
+      <br />
+      <Link href="/material">
+        <a>Test Material UI ThmmeneProvider</a>
+      </Link>
       <br />
       <Button name="Counter" onClick={handleCount} />
       <style jsx>{`
