@@ -124,7 +124,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\Admin\\Desktop\\hello-next\\lib\\with-redux-store.js";
+var _jsxFileName = "C:\\WorkSpace\\hello-next\\next_with_redux\\lib\\with-redux-store.js";
 
 
 var isServer = "undefined" === 'undefined';
@@ -1383,7 +1383,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\Admin\\Desktop\\hello-next\\pages\\_app.js";
+var _jsxFileName = "C:\\WorkSpace\\hello-next\\next_with_redux\\pages\\_app.js";
 
 
 

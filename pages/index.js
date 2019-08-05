@@ -57,7 +57,7 @@ function Blog(props) {
   console.log('component', props)
   return (
     <Layout>
-      <h1>My Blog</h1>
+      <h1>My Blog2</h1>
       <h3>My count: {count}</h3>
       <ul>
         {getPosts().map(post => (
