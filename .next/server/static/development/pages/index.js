@@ -222,6 +222,7 @@ var _jsxFileName = "C:\\WorkSpace\\hello-next\\next_with_redux\\components\\MyLa
 
 
 var theme_red = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["createMuiTheme"])({
+  name: 'theme_red',
   buttom: {
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
@@ -269,20 +270,20 @@ var Layout = function Layout(props) {
     style: layoutStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_styles__WEBPACK_IMPORTED_MODULE_3__["ThemeProvider"], {
     theme: returnTheme(nameTheme),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: this
   }, props.children));
