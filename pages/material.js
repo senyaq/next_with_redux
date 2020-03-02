@@ -95,8 +95,9 @@ function ThemeNesting(props) {
     } else {
       setThemeName(theme_red)
     }
+    console.log('props', props)
     props.dispatch({ type: 'THEME', payload: themeName.name })
-    console.log(themeName.name)
+    console.log('dispatch', themeName.name)
   }
 
   return (
@@ -120,7 +121,7 @@ function ThemeNesting(props) {
 
 function mapStateToProps(state) {
   const { nameTheme } = state
-  return { nameTheme }
+  return {}
 }
 
 export default connect(
