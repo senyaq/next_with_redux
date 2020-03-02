@@ -1160,38 +1160,29 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
       },
       __self: this
     }), __jsx("link", {
-      rel: "icon",
-      type: "image/x-icon",
-      href: "public/static/favicon.ico",
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 16
       },
       __self: this
-    }), __jsx("link", {
-      rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17
-      },
-      __self: this
     })), __jsx("body", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 18
       },
       __self: this
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 19
       },
       __self: this
     }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 20
       },
       __self: this
     })));
@@ -1229,7 +1220,7 @@ MyDocument.getInitialProps = async ctx => {
     enhanceApp: App => props => sheets.collect(__jsx(App, _extends({}, props, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 56
       },
       __self: undefined
     })))
@@ -1242,7 +1233,7 @@ MyDocument.getInitialProps = async ctx => {
       key: "styles",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 65
       },
       __self: undefined
     }, initialProps.styles, sheets.getStyleElement())]

@@ -87,17 +87,14 @@ function Container(props) {
 
 function ThemeNesting(props) {
   const classes = useGeneral()
-  const [themeName, setThemeName] = useState(theme_blue)
+  const { nameTheme } = props
 
   const handler = () => {
-    if (themeName.name === 'theme_red') {
-      setThemeName(theme_blue)
+    if (nameTheme === 'theme_red') {
+      props.dispatch({ type: 'THEME', payload: 'theme_blue' })
     } else {
-      setThemeName(theme_red)
+      props.dispatch({ type: 'THEME', payload: 'theme_red' })
     }
-    console.log('props', props)
-    props.dispatch({ type: 'THEME', payload: themeName.name })
-    console.log('dispatch', themeName.name)
   }
 
   return (
@@ -121,7 +118,7 @@ function ThemeNesting(props) {
 
 function mapStateToProps(state) {
   const { nameTheme } = state
-  return {}
+  return { nameTheme }
 }
 
 export default connect(
