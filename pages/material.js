@@ -99,7 +99,6 @@ function ThemeNesting(props) {
 
   return (
     <Layout>
-      {console.log('Thene change')}
       <button type="button" onClick={handler} className={classes.btn}>
         Theme change
       </button>

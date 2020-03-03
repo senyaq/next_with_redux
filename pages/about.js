@@ -5,7 +5,6 @@ import Layout from '../components/MyLayout.js'
 export default memo(function About() {
   return (
     <div>
-      {console.log('About')}
       <Layout>
         <p>This is the about page</p>
         <Link href="/">

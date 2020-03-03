@@ -36,7 +36,6 @@ const layoutStyle = {
 }
 
 const returnTheme = name => {
-  console.log('name', name)
   if (name === 'theme_blue') {
     return theme_blue
   } else if (name === 'theme_red') {
@@ -47,7 +46,6 @@ const returnTheme = name => {
 }
 
 const Layout = props => {
-  console.log('layout', props.nameTheme)
   const { nameTheme } = props
   return (
     <div style={layoutStyle}>

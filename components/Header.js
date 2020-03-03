@@ -7,7 +7,6 @@ const linkStyle = {
 
 const Header = () => (
   <div>
-    {console.log('Header')}
     <Link href="/">
       <a style={linkStyle}>Home</a>
     </Link>
