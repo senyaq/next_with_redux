@@ -1,11 +1,13 @@
-import Link from 'next/link';
+import React, { memo } from 'react'
+import Link from 'next/link'
 
 const linkStyle = {
-  marginRight: 15
-};
+  marginRight: 15,
+}
 
 const Header = () => (
   <div>
+    {console.log('Header')}
     <Link href="/">
       <a style={linkStyle}>Home</a>
     </Link>
@@ -13,6 +15,6 @@ const Header = () => (
       <a style={linkStyle}>About</a>
     </Link>
   </div>
-);
+)
 
-export default Header;
+export default memo(Header)

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 import { makeStyles } from '@material-ui/styles'
 import Layout from '../components/MyLayout.js'
@@ -99,6 +99,7 @@ function ThemeNesting(props) {
 
   return (
     <Layout>
+      {console.log('Thene change')}
       <button type="button" onClick={handler} className={classes.btn}>
         Theme change
       </button>

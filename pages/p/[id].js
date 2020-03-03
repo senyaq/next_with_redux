@@ -1,3 +1,4 @@
+import React from 'react'
 import { useRouter } from 'next/router'
 import Markdown from 'react-markdown'
 import { connect } from 'react-redux'
@@ -10,7 +11,8 @@ const Article = props => {
   return (
     <Layout>
       <h1>{router.query.id}</h1>
-      <h3>Count from redux: {count}</h3>
+      <h3 onClick={() => props.dispatch({ type: 'PLUS', payload: null })}>Count from redux: {count}</h3>
+
       <div className="markdown">
         <Markdown
           source={`
@@ -57,57 +59,3 @@ export default connect(
   mapStateToProps,
   null
 )(Article)
-
-// import fetch from 'isomorphic-unfetch';
-// import Layout from '../../components/MyLayout.js';
-
-// const Post = props => (
-//   <Layout>
-//     <h1>{props.show.name}</h1>
-//     <p>{props.show.summary.replace(/<[/]?p>/g, '')}</p>
-//     <img src={props.show.image.medium} />
-//   </Layout>
-// );
-
-// Post.getInitialProps = async function(context) {
-//   const { id } = context.query;
-//   const res = await fetch(`https://api.tvmaze.com/shows/${id}`);
-//   const show = await res.json();
-
-//   console.log(`Fetched show: ${show.name}`);
-
-//   return { show };
-// };
-
-// export default Post;
-
-// import { useRouter } from 'next/router';
-// import Layout from '../../components/MyLayout.js';
-
-// export default function Post() {
-//   const router = useRouter();
-
-//   return (
-//     <Layout>
-//       <h1>{router.query.id}</h1>
-//       <p>This is the blog post content.</p>
-//     </Layout>
-//   );
-// }
-
-// post.js
-// import { useRouter } from 'next/router';
-// import Layout from '../components/MyLayout.js';
-
-// const Page = () => {
-//   const router = useRouter();
-
-//   return (
-//     <Layout>
-//       <h1>{router.query.title}</h1>
-//       <p>This is the blog post content.</p>
-//     </Layout>
-//   );
-// };
-
-// export default Page;

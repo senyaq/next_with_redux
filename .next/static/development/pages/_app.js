@@ -12591,7 +12591,7 @@ var foo_reducer = function foo_reducer() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var _foo_reducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./foo_reducer */ "./store/reducer/foo_reducer.js");
-/* harmony import */ var _counter_reducer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./counter_reducer */ "./store/reducer/counter_reducer.js");
+/* harmony import */ var _counter_reducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./counter_reducer */ "./store/reducer/counter_reducer.js");
 /* harmony import */ var _theme_reducer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./theme_reducer */ "./store/reducer/theme_reducer.js");
 
 
@@ -12600,7 +12600,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var rootReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
   foo: _foo_reducer__WEBPACK_IMPORTED_MODULE_1__["default"],
-  count: _counter_reducer__WEBPACK_IMPORTED_MODULE_4__["default"],
+  count: _counter_reducer__WEBPACK_IMPORTED_MODULE_2__["default"],
   nameTheme: _theme_reducer__WEBPACK_IMPORTED_MODULE_3__["default"]
 });
 /* harmony default export */ __webpack_exports__["default"] = (rootReducer);
