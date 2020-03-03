@@ -1,4 +1,4 @@
-const theme_reduser = (nameTheme = 'theme_red', action) => {
+const theme_reducer = (nameTheme = 'theme_red', action) => {
   switch (action.type) {
     case 'THEME':
       return action.payload
@@ -7,4 +7,4 @@ const theme_reduser = (nameTheme = 'theme_red', action) => {
   }
 }
 
-export default theme_reduser
+export default theme_reducer

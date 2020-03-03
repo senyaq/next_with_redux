@@ -12525,16 +12525,16 @@ function initializeStore(initialState) {
 
 /***/ }),
 
-/***/ "./store/reducer/foo_reduser.js":
+/***/ "./store/reducer/foo_reducer.js":
 /*!**************************************!*\
-  !*** ./store/reducer/foo_reduser.js ***!
+  !*** ./store/reducer/foo_reducer.js ***!
   \**************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var foo_reduser = function foo_reduser() {
+var foo_reducer = function foo_reducer() {
   var foo = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'start';
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
@@ -12547,33 +12547,33 @@ var foo_reduser = function foo_reduser() {
   }
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (foo_reduser);
+/* harmony default export */ __webpack_exports__["default"] = (foo_reducer);
 
 /***/ }),
 
-/***/ "./store/reducer/increase_reduser.js":
+/***/ "./store/reducer/increase_reducer.js":
 /*!*******************************************!*\
-  !*** ./store/reducer/increase_reduser.js ***!
+  !*** ./store/reducer/increase_reducer.js ***!
   \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var increase_reduser = function increase_reduser() {
+var increase_reducer = function increase_reducer() {
   var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
   switch (action.type) {
     case 'PLUS':
-      return action.payload;
+      return count = ++count;
 
     default:
       return count;
   }
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (increase_reduser);
+/* harmony default export */ __webpack_exports__["default"] = (increase_reducer);
 
 /***/ }),
 
@@ -12587,33 +12587,33 @@ var increase_reduser = function increase_reduser() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
-/* harmony import */ var _foo_reduser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./foo_reduser */ "./store/reducer/foo_reduser.js");
-/* harmony import */ var _increase_reduser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./increase_reduser */ "./store/reducer/increase_reduser.js");
-/* harmony import */ var _theme_reduser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./theme_reduser */ "./store/reducer/theme_reduser.js");
+/* harmony import */ var _foo_reducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./foo_reducer */ "./store/reducer/foo_reducer.js");
+/* harmony import */ var _increase_reducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./increase_reducer */ "./store/reducer/increase_reducer.js");
+/* harmony import */ var _theme_reducer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./theme_reducer */ "./store/reducer/theme_reducer.js");
 
 
 
  // import мелкие редюсеры …
 
 var rootReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
-  foo: _foo_reduser__WEBPACK_IMPORTED_MODULE_1__["default"],
-  count: _increase_reduser__WEBPACK_IMPORTED_MODULE_2__["default"],
-  nameTheme: _theme_reduser__WEBPACK_IMPORTED_MODULE_3__["default"]
+  foo: _foo_reducer__WEBPACK_IMPORTED_MODULE_1__["default"],
+  count: _increase_reducer__WEBPACK_IMPORTED_MODULE_2__["default"],
+  nameTheme: _theme_reducer__WEBPACK_IMPORTED_MODULE_3__["default"]
 });
 /* harmony default export */ __webpack_exports__["default"] = (rootReducer);
 
 /***/ }),
 
-/***/ "./store/reducer/theme_reduser.js":
+/***/ "./store/reducer/theme_reducer.js":
 /*!****************************************!*\
-  !*** ./store/reducer/theme_reduser.js ***!
+  !*** ./store/reducer/theme_reducer.js ***!
   \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var theme_reduser = function theme_reduser() {
+var theme_reducer = function theme_reducer() {
   var nameTheme = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'theme_red';
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
@@ -12626,7 +12626,7 @@ var theme_reduser = function theme_reduser() {
   }
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (theme_reduser);
+/* harmony default export */ __webpack_exports__["default"] = (theme_reducer);
 
 /***/ }),
 

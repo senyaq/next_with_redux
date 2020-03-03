@@ -47,14 +47,12 @@ const PostLink = ({ post }) => (
 )
 
 function Blog(props) {
-  let [count, setCount] = useState(props.count)
+  const { count } = props
 
-  const handleCount = () => {
-    const newCount = (count += 1)
-    props.dispatch({ type: 'PLUS', payload: newCount })
-    setCount(newCount)
-  }
+  const handleCount = () => props.dispatch({ type: 'PLUS', payload: null })
+
   console.log('component', props)
+
   return (
     <Layout>
       <h1>My Blog</h1>

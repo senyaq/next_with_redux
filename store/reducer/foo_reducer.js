@@ -1,4 +1,4 @@
-const foo_reduser = (foo = 'start', action) => {
+const foo_reducer = (foo = 'start', action) => {
   switch (action.type) {
     case 'FOO':
       return action.payload
@@ -7,4 +7,4 @@ const foo_reduser = (foo = 'start', action) => {
   }
 }
 
-export default foo_reduser
+export default foo_reducer

@@ -1,13 +1,13 @@
 import { combineReducers } from 'redux'
-import foo_reduser from './foo_reduser'
-import increase_reduser from './increase_reduser'
-import theme_reduser from './theme_reduser'
+import foo_reducer from './foo_reducer'
+import increase_reducer from './increase_reducer'
+import theme_reducer from './theme_reducer'
 // import мелкие редюсеры …
 
 const rootReducer = combineReducers({
-  foo: foo_reduser,
-  count: increase_reduser,
-  nameTheme: theme_reduser,
+  foo: foo_reducer,
+  count: increase_reducer,
+  nameTheme: theme_reducer,
 })
 
 export default rootReducer
