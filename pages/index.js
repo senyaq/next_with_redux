@@ -49,7 +49,7 @@ const PostLink = ({ post }) => (
 function Blog(props) {
   const { count } = props
 
-  const handleCount = () => props.dispatch({ type: 'PLUS', payload: null })
+  const handleCount = type => props.dispatch({ type, payload: null })
 
   console.log('component', props)
 
@@ -67,7 +67,8 @@ function Blog(props) {
         <a>Test Material UI ThmmeneProvider</a>
       </Link>
       <br />
-      <Button name="Counter" onClick={handleCount} />
+      <Button name="Counter+" onClick={() => handleCount('PLUS')} />
+      <Button name="Counter-" onClick={() => handleCount('MINUS')} />
       <style jsx>{`
         h1,
         a {
