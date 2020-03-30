@@ -7,6 +7,7 @@ const linkStyle = {
 
 const Header = () => (
   <div>
+    {console.log(1234, process.env.API_URL)}
     <Link href="/">
       <a style={linkStyle}>Home</a>
     </Link>
